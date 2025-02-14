@@ -31,3 +31,41 @@ Java复习：
 对象（object
 类（class
 每个类都有一个构造方法：没有显示定义就会提供一个默认构造方法。与类同名。
+
+Number的子类：包装类
+包装类	  基本数据类型
+Boolean	boolean
+Byte	  byte
+Short	  short
+Integer	int
+Long	  long
+Character	char
+Float	  float
+Double	double
+装箱&拆箱
+
+Character类 对于字符进行包装
+String类  注意公共池与堆之间的关系，String创建的字符存储在公共池中，而new后的字符串对象在堆上。
+          公共池的公用关系！
+
+StringBuilder：速度优势
+ public class RunoobTest{
+    public static void main(String[] args){
+        StringBuilder sb = new StringBuilder(10);   初始十格数组空间
+        sb.append("Runoob..");
+        System.out.println(sb);  
+        sb.append("!");
+        System.out.println(sb); 
+        sb.insert(8, "Java");
+        System.out.println(sb); 
+        sb.delete(5,8);
+        System.out.println(sb);  
+    }
+}
+
+
+for(type element: array)  For-Each循环遍历方法：
+{
+    System.out.println(element);
+}
+
