@@ -1,0 +1,33 @@
+Java复习：
+  1、类（Class）
+  2、对象（Object）
+  3、继承（Inheritance）
+  4、封装（Encapsulation）
+       ·将对象的状态（字段）私有化，通过公共方法访问。
+       private String name; 
+       public String getName() { return name; }
+  5、多态（Polymorphism）
+       ·方法重载和重写。
+       方法重载：public int add(int a, int b) { ... } 和 public double add(double a, double b) { ... }
+           重载：同一个类可以有多个同名的方法，但参数不同。
+       方法重写：@Override public void makeSound() { System.out.println("Meow"); 
+  6、抽象（Abstraction）
+        ·使用抽象类和接口来定义必须实现的方法，不提供具体实现。
+        抽象类：abstract class Caravan{
+                  private double price;
+                  private String model;
+                  private String year;
+                  public abstract void goFast(); //抽象方法
+                  public abstract void changeColor();
+                 }
+
+                class Class extends Caravan{
+                 .......}
+        接口：public interface Animal { void eat(); }
+  7、接口（Interface）
+         ·定义类必须实现的方法，支持多重继承。
+
+
+对象（object
+类（class
+每个类都有一个构造方法：没有显示定义就会提供一个默认构造方法。与类同名。
